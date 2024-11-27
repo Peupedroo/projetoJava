@@ -12,8 +12,7 @@ public class Usuario extends Pessoa {
     }
 
     public void setLogin(String login) {
-        this.login = login;
-    }
+        this.login = login;}
 
     public String getSenha() {
         return senha;

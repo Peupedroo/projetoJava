@@ -18,8 +18,7 @@ public abstract class Pessoa {
     }
 
     public String getId() {
-        return id;
-    }
+        return id; }
 
     public String getNome() {
         return nome;

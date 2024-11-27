@@ -52,8 +52,7 @@ public class Livro {
     }
 
     public String getEditora() {
-        return editora;
-    }
+        return editora;}
 
     public String getTitulo() {return  titulo;}
 
