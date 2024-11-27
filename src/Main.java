@@ -14,7 +14,7 @@ public class Main {
         System.out.println("4 - Cadastrar Funcionário");
 
         int escolha = sc.nextInt();
-        sc.nextLine(); // Consumir a nova linha deixada pelo nextInt()
+        sc.nextLine();
 
         switch (escolha) {
             case 1 -> cadastrarLivro(sc);
@@ -120,7 +120,7 @@ public class Main {
             funcionario.setTelefones(sc.nextLine());
             System.out.println("Digite o salário do funcionário:");
             funcionario.setSalario(sc.nextDouble());
-            sc.nextLine(); // Consumir a nova linha deixada pelo nextDouble()
+            sc.nextLine(); 
             System.out.println("Digite os dados da carteira funcional:");
             funcionario.setDadosCarteira(sc.nextLine());
 

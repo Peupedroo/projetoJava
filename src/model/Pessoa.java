@@ -5,6 +5,7 @@ public abstract class Pessoa {
     private String nome;
     private String endereco;
     private String telefones;
+    private int numero;
 
     public Pessoa(String id, String nome, String endereco, String telefones) {
         this.id = id;
@@ -15,14 +16,14 @@ public abstract class Pessoa {
 
     public void setId(String id) {
         this.id = id;
-    }
+}
 
     public String getId() {
         return id; }
 
     public String getNome() {
         return nome;
-    }
+ }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -34,7 +35,7 @@ public abstract class Pessoa {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
-    }
+}
 
     public String getTelefones() {
         return telefones;
@@ -52,6 +53,6 @@ public abstract class Pessoa {
                 ", endereco='" + endereco + '\'' +
                 ", telefones='" + telefones + '\'' +
                 '}';
-    }
+}
 }
 
