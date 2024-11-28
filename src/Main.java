@@ -9,9 +9,9 @@ public class Main {
         System.out.println("vc quer entrar no cadastramento ");
         System.out.println("Escolha uma opção:");
         System.out.println("1 - Cadastrar Livro");
-        System.out.println("2 - Cadastrar Editora");
-        System.out.println("3 - Cadastrar Usuário");
-        System.out.println("4 - Cadastrar Funcionário");
+        System.out.println("2 - Cadastrar Editoraa");
+        System.out.println("3 - Cadastrar Usuárioo");
+        System.out.println("4 - Cadastrar Funcionárioo");
 
         int escolha = sc.nextInt();
         sc.nextLine();
@@ -21,7 +21,7 @@ public class Main {
             case 2 -> cadastrarEditora(sc);
             case 3 -> cadastrarUsuario(sc);
             case 4 -> cadastrarFuncionario(sc);
-            default -> System.out.println("Opção inválida.");
+            default -> System.out.println("Opção inválida,");
         }
     }
 
@@ -110,7 +110,7 @@ public class Main {
         String cont;
 
         do {
-            System.out.println("Digite o ID do funcionário:");
+            System.out.println("Digite o ID do funcionárioo:");
             funcionario.setId(sc.nextLine());
             System.out.println("Digite o nome do funcionário:");
             funcionario.setNome(sc.nextLine());
