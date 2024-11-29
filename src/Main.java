@@ -81,7 +81,7 @@ public class Main {
     }
 
     public static void cadastrarUsuario(Scanner sc) {
-        Usuario usuario = new Usuario("id", "nome", "endereco", "telefones");
+        Pessoa usuario = new Usuario("id", "nome", "endereco", "telefones");
         String cont;
 
         do {
@@ -94,9 +94,9 @@ public class Main {
             System.out.println("Digite os telefones do usuário:");
             usuario.setTelefones(sc.nextLine());
             System.out.println("Digite o login do usuário:");
-            usuario.setLogin(sc.nextLine());
+            ((Usuario) usuario).setLogin(sc.nextLine());
             System.out.println("Digite a senha do usuário:");
-            usuario.setSenha(sc.nextLine());
+            ((Usuario) usuario).setSenha(sc.nextLine());
 
             System.out.println(usuario);
 
@@ -106,7 +106,7 @@ public class Main {
     }
 
     public static void cadastrarFuncionario(Scanner sc) {
-        Funcionarios funcionario = new Funcionarios("id", "nome", "endereco", "telefones");
+     Pessoa funcionario = new Funcionarios("id", "nome", "endereco", "telefones");
         String cont;
 
         do {
@@ -119,10 +119,10 @@ public class Main {
             System.out.println("Digite os telefones do funcionário:");
             funcionario.setTelefones(sc.nextLine());
             System.out.println("Digite o salário do funcionário:");
-            funcionario.setSalario(sc.nextDouble());
+             ((Funcionarios)funcionario).setSalario(sc.nextDouble());
             sc.nextLine(); 
             System.out.println("Digite os dados da carteira funcional:");
-            funcionario.setDadosCarteira(sc.nextLine());
+            ((Funcionarios) funcionario).setDadosCarteira(sc.nextLine());
 
             System.out.println(funcionario);
 
